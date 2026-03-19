@@ -1,0 +1,64 @@
+/* ── Dark theme (default) ── */
+:root,
+[data-theme="dark"] {
+  --bg: #0d0f14;
+  --surface: #151922;
+  --sidebar-bg: #111318;
+  --border: #2a2f3a;
+  --text: #e6e9ef;
+  --muted: #8b9099;
+  --accent: #7c9eff;
+  --accent-dim: #5a7ae0;
+  --success: #7ee787;
+  --warning: #f0c14b;
+  --error: #f87171;
+  --radius: 10px;
+  --font-sans: "Outfit", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* ── Light theme ── */
+[data-theme="light"] {
+  --bg: #f4f6fb;
+  --surface: #ffffff;
+  --sidebar-bg: #f0f2f8;
+  --border: #dde1ec;
+  --text: #1a1d27;
+  --muted: #6b7280;
+  --accent: #4a6ef5;
+  --accent-dim: #3a5be0;
+  --success: #16a34a;
+  --warning: #d97706;
+  --error: #dc2626;
+  --radius: 10px;
+  --font-sans: "Outfit", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.2s, color 0.2s;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}

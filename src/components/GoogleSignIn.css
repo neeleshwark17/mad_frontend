@@ -1,0 +1,135 @@
+.gsignin-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+
+.gsignin-box {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem 2rem 1.75rem;
+  width: 340px;
+  max-width: 92vw;
+  text-align: center;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+
+.gsignin-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  font-size: 1rem;
+  padding: 0.25rem 0.4rem;
+  border-radius: 4px;
+  line-height: 1;
+}
+
+.gsignin-close:hover {
+  color: var(--text);
+  background: var(--border);
+}
+
+.gsignin-logo {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, rgba(124, 158, 255, 0.2), rgba(124, 158, 255, 0.05));
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: var(--accent);
+}
+
+.gsignin-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 0.35rem;
+}
+
+.gsignin-sub {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
+
+.gsignin-google-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.gsignin-mock-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  width: 100%;
+  padding: 0.7rem 1rem;
+  background: #fff;
+  color: #1f1f1f;
+  border: 1px solid #dadce0;
+  border-radius: 24px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.15s, box-shadow 0.15s;
+  margin-bottom: 1rem;
+}
+
+.gsignin-mock-btn:hover {
+  background: #f8f9fa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.gsignin-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.25rem 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.gsignin-divider::before,
+.gsignin-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.gsignin-demo-btn {
+  width: 100%;
+  padding: 0.65rem 1rem;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  color: var(--text);
+  font-size: 0.88rem;
+  transition: background 0.15s, border-color 0.15s;
+  margin-bottom: 1rem;
+}
+
+.gsignin-demo-btn:hover {
+  background: var(--border);
+  border-color: var(--accent);
+}
+
+.gsignin-note {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.5;
+}
